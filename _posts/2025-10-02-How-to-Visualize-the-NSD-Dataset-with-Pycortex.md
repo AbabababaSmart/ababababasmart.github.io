@@ -8,7 +8,7 @@ tags:
   - NSD dataset
 ---
 
-## This blog is a tutorial on visualizing the Natural Scenes Dataset (NSD) with Pycortex, aimed at researchers who want a practical guide for neural data visualization.
+This blog is a tutorial on visualizing the Natural Scenes Dataset (NSD) with Pycortex, aimed at researchers who want a practical guide for neural data visualization.
 
 ## Contents
 - [Preface](#preface)
