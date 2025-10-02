@@ -14,9 +14,11 @@ Education
 * **B.Eng. in Intelligent Medical Engineering**, Southern University of Science and Technology (SUSTech), *Sep. 2022 – Present*  
   - Cumulative GPA: 3.93/4.00 (Rank: 1/41)  
   - Selected Coursework: Probability Theory and Mathematical Statistics (97), Machine Learning and Applications in Medical Engineering (99), Data Structures and Algorithm Analysis (94), Neural Engineering and Brain–Computer Interface (97)
+  - Supervisor: Dr.Quanying Liu
 
 * **Summer Workshop in Computer Science**, National University of Singapore (NUS), *Jun. 2024 – Jul. 2024*  
-  - Core Course: Deep Learning & Robotics  
+  - Core Course: Deep Learning & Robotics
+  - Supervisor: Dr.Colin Tan
 
 Awards
 ======
