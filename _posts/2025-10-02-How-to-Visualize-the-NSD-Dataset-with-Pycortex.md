@@ -52,6 +52,7 @@ Without further ado—if you want to download the data (⚠️ it is not recomme
    ![image](/images/blog/79018a53-b7f6-43e7-bce5-aedbd80b2ad7.png)
 
 2. Once you’ve decided which subset(s) to download, run the following command on your server (for example, downloading `s3://natural-scenes-dataset/nsddata_betas/ppdata/` into your local path `YOURPATH`).  Thanks to the `--no-sign-request` flag, no AWS account is required.
+
 ```
 #!/bin/bash
 
@@ -59,6 +60,7 @@ aws s3 sync --no-sign-request s3://natural-scenes-dataset/nsddata_betas/ppdata/ 
 # aws s3 sync: use the AWS CLI to synchronize files from an S3 bucket to a local directory
 # --no-sign-request: access public data without requiring an AWS account or credentials
 ```
+
 At this point, the dataset has been successfully downloaded from AWS S3 to your server. It is worth emphasizing again that, due to the dataset's enormous size (some folders are measured in terabytes), it is highly recommended to download only the files you need rather than attempting to download everything.
 
 
@@ -102,6 +104,7 @@ And thanks to the great NSD dataset contributors and Pycortex's built-in functio
    ![image](/images/blog/d11befa6-8e9b-4d6e-a07e-880485eaf565.png)
 
 3. Once the files from the first two steps are downloaded to the server and the paths are correctly specified, you can run the following code to use Pycortex's built-in functions to generate the database for each participant.
+
 ```
 import cortex
 
@@ -110,6 +113,7 @@ for subj in range(1, 9):
     cortex.freesurfer.import_flat(f'subj0{subj}', 'full', hemis=['lh','rh'], cx_subject=f'subj0{subj}', flat_type='freesurfer', auto_overwrite=True, freesurfer_subject_dir='/home/YOURNAME/freesurfer/subjects/', clean=True)
     cortex.align.automatic(f'subj0{subj}', 'full', f"/YOURPATH/meanbeta.nii.gz")
 ```
+
 Here is a brief explanation for the code:  
 
 - `cortex.freesurfer.import_flat` is used to import the surface data reconstructed by FreeSurfer (e.g., white matter, cortical thickness, curvature, etc.) into the Pycortex database.  
@@ -126,6 +130,7 @@ Simply speaking, you can find the filestore directory by running:
 import cortex
 cortex.database.default_filestore
 ```
+
 *Note: It is important to point out that the workflow described above does not have to strictly follow the example paths or the specific fMRI alignment reference files. You can customize the settings as long as the paths and references are consistent throughout. For example, in this demonstration, the reference file used is `meanbeta.nii.gz` located under **func1pt8mm/betas_fithrf_GLMdenoise_RR/**, which corresponds to a resolution of 1.8 mm. The NSD dataset also provides higher-resolution data (0.8 mm), which can be used depending on your specific requirements.*
 
 
@@ -138,6 +143,7 @@ Once we have all the prerequisite files, we can map the data onto the 2D cortex 
 **Here, `data_to_project` corresponds to the raw data to be mapped from the prerequisite files, while `subject` and `xfm` specify which surface database to use.**
 
 *Note: The `cmap` parameter in `cortex.Volume` can be used to adjust the color scheme of the flatmap. A list of available colormaps can be found here: [Pycortex Documentaion: colormaps](https://gallantlab.org/pycortex/colormaps.html). Personally, I like the `magma` colormap, and I hope everyone using Pycortex can find a color scheme they enjoy.* 😊
+
 ```
 import cortex
 import numpy as np
@@ -159,6 +165,7 @@ fig.text(0.5, 0.13, "YOURMETRIC", fontsize=17, fontweight='bold', ha='center', v
 
 plt.show()
 ```
+
 ### 2. ROI Labeling<a id="2-roi-labeling"></a>
 
 
@@ -252,6 +259,7 @@ for hemi in hemis:
             # flat[:, 1] = -flat[:, 1] 
             flat=pts 
 ```
+
 Finally, you will obtain a normal flatmap as shown in the right figure. For a detailed discussion and other possible solutions, see [https://github.com/gallantlab/pycortex/issues/488](https://github.com/gallantlab/pycortex/issues/488).
 
 ### 2. Flatmap Sulcus/Gyrus Settings<a id="2-flatmap-sulcusgyrus-settings"></a>
@@ -321,6 +329,7 @@ fig = plt.figure(figsize=(10,8))
 volume = cortex.Volume("mni_to_sub.nii.gz", 'S1', 'fullhead')
 cortex.quickflat.make_figure(volume, with_curvature=True, with_sulci=True, fig=fig)
 ```
+
 *Note: Although this method is inherited from our lab, its visualization accuracy remains to be validated. When tested using the NSD dataset, the projected positions show some deviations, which may be due to factors such as template selection, individual anatomical differences, transformation precision, and resampling errors. Moreover, I do not fully understand every step of the transformations involved. Therefore, I encourage readers to consult the transformation data provided by the dataset itself to ensure more accurate flatmap visualizations.*
 
 ![image](/images/blog/5dcf7085-684f-4e6e-be7d-413e4b810014.png)
