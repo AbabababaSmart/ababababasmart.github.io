@@ -11,54 +11,31 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **B.Eng. in Intelligent Medical Engineering**, Southern University of Science and Technology (SUSTech), *Sep. 2022 – Present*  
+  - Cumulative GPA: 3.93/4.00 (Rank: 1/41)  
+  - Selected Coursework: Probability Theory and Mathematical Statistics (97), Machine Learning and Applications in Medical Engineering (99), Data Structures and Algorithm Analysis (94), Neural Engineering and Brain–Computer Interface (97)
 
-Work experience
+* **Summer Workshop in Computer Science**, National University of Singapore (NUS), *Jun. 2024 – Jul. 2024*  
+  - Core Course: Deep Learning & Robotics  
+
+Awards
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Second Prize, Natural Science Paper, 19th “Challenge Cup” Guangdong College Student Science Competition (2025)  
+* Honorary Title of "Outstanding Student" (2024)  
+* SUSTech Scholarship for Outstanding Students (2022–2023, 2023–2024)  
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming:** Python, Matlab, Java  
+* **ML/DL Frameworks:** Scikit-learn, PyTorch  
+* **Signal Analysis:** MNE, Nilearn (EEG & fMRI)  
+* **Operating Systems:** Linux  
+* **Languages:** English – CET-6 (619), TOEFL (108)  
+* **Academic Writing:** LaTeX  
 
-Publications
+Research Interests
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Early prediction of diseases with AI models  
+* Alignment between AI and brain representations  
+* Deep learning for neuroscience and brain-inspired AI
+* Anything that is interesting enough to attract me 😊
