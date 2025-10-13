@@ -19,4 +19,4 @@ package-lock.json
 # Ignore folders related to IDEs
 .vscode/
 
-template
+./_posts/template.md
