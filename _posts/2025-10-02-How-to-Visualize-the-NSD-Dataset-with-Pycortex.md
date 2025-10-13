@@ -3,7 +3,7 @@ title: 'How to Visualize the NSD Dataset with Pycortex?'
 date: 2025-10-02
 permalink: /posts/2025/10/How-to-Visualize-the-NSD-Dataset-with-Pycortex/
 tags:
-  - Pycortex
+  - Pycortex 
   - flatmap visualization
   - NSD dataset
 ---

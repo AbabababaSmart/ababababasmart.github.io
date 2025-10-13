@@ -2,7 +2,7 @@
 title: 'Your-Blog-Title'  
 date: YYYY-MM-DD
 permalink: /posts/YYYY/MM/Your-Blog-Title/
-tags:
+tags: 
   - Keyword1
   - Keyword2
 ---
