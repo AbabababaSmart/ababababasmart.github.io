@@ -1,5 +1,5 @@
 ---
-title: 'Your Blog Title'
+title: 'Your-Blog-Title'
 date: YYYY-MM-DD
 permalink: /posts/YYYY/MM/Your-Blog-Title/
 tags:
