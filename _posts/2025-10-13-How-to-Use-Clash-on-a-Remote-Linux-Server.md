@@ -156,3 +156,5 @@ proxy_off  # Disable proxy
 ### Reference  <a id="reference"></a>
 [1] [YuYoung32 — Linux Clash Setup](https://www.yuyoung32.com/post/linux+clash%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/)  
 [2] [Zhiyang Liang — Configure Clash on Remote Server](https://zhiyangliang.github.io/2023/08/30/%E5%9C%A8%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AEClash/)
+
+*Updated on a cloudy day, October 13, 2025 — Shenzhen, China.* 🌤️
