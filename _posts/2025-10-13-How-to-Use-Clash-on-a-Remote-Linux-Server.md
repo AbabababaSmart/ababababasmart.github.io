@@ -56,12 +56,15 @@ After purchasing the subscription, you can locate the configuration file as foll
 1. Open the subscription you want to upload to the remote server. Right-click and select “Show in Folder”. This will automatically navigate to the corresponding `.yml` configuration file.  
 2. Before uploading to the remote server, rename it to `config.yaml`.  
 3. For the `Country.mmdb` file, you can try looking in the parent directory. If it was not automatically downloaded with your subscription, you can choose one method listed below:  
-  (1) Automatically download it:
-  ```bash
-  cd ~/.config/clash/
-  wget -O Country.mmdb "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb"
-  ```
-  (2). Manually download it from [MaxMind GeoIP Releases](https://github.com/Dreamacro/maxmind-geoip/releases) and then upload it to `~/.config/clash/`.  
+
+(1). Automatically download it:
+```bash
+cd ~/.config/clash/
+wget -O Country.mmdb "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb"
+```
+
+(2). Manually download it from [MaxMind GeoIP Releases](https://github.com/Dreamacro/maxmind-geoip/releases) and then upload it to `~/.config/clash/`.  
+
 4. Finish.
 
 
