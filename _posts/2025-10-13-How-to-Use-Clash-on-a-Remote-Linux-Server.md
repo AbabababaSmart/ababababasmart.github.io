@@ -65,6 +65,7 @@ wget -O Country.mmdb "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Cou
 
 (2). Manually download it from [MaxMind GeoIP Releases](https://github.com/Dreamacro/maxmind-geoip/releases) and then upload it to `~/.config/clash/`.  
 
+
 4. Finish.
 
 
