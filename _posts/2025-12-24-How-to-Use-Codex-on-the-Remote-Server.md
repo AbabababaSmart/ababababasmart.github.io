@@ -5,7 +5,7 @@ permalink: /posts/2025/12/2025-12-24-How-to-Use-Codex-on-the-Remote-Server/
 ---
 
 有时候我们想在VSCode连接远程服务器的情况下，使用Codex插件来辅助编程。但由于某些转发原因，Codex 可能会不太配合：首先在第一步登录时就会报错，如下图所示。
-![image](/images/blog/codex/{1988EAE4-3BDD-422D-92CE-26B5E7475116}.png)
+![image](/images/blog/codex/{1988EAE4-3BDD-422D-92CE-26B5E7475116}.png)  
 因此，这篇教程主要记录如何在VSCode连接远程服务器的情况下使用Codex插件。
 
 ### 前置条件: 
@@ -38,4 +38,6 @@ Step 3.
 Step 4.
 使用时首先在终端中**打开clash**，如果是第一次使用的话首先需要Sign in with ChatGPT，登录成功之后的界面如下图所示，然后就可以打开新聊天进行交流啦，注意整个登录和交流的过程中都需要**保持clash代理处于打开的状态**。
 
-![image](/images/blog/codex/0d493c31b647ef7eb261e28de3dcf035.png)
+![image](/images/blog/codex/0d493c31b647ef7eb261e28de3dcf035.png)  
+
+Updated on December 24, 2025 🎄🍎
